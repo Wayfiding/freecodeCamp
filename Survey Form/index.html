@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1>Technology University</h1>
+        <p id="description" class="description text-center"> Be free to learn, and never stop!</p>
+    </header>
+    
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" class="form-control" type="text" name="name"
+            placeholder="Enter Your Name" required="">
+                       
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">E-mail</label>
+            <input id="email" class="form-control" type="email" name="email"
+            placeholder="Enter Your Email" required="">
+                    
+        </div>
+        <div class="form-group">
+            <label id="Age-label" for="Age">Age </label>
+            <input id="Age" class="form-control" type="number" name="age"
+            placeholder="Age" min="10" max="99"required="">
+                    
+        </div>
+        <div class="form-group">
+            <p>Qual melhor Opção descreve sua carreira atualmente?</p>
+            <select id="dropdown" class="form-control" name="role" required="">
+                <option disabled="" selected="" value="">Escolha sua atual posição</option>
+                <option value="estudante"> Estudante</option>
+                <option value="tempointegral">Tempo Integral</option>
+                <option value="estagiario">Estágiario</option>
+                <option value="preferenao">Prefere não dizer</option>
+                <option value="outros">Outros</option>
+            </select>
+          <div id="recommend" class="form-group">
+              <p>Você recomendaria os serviços de tecnologia de Alberto?</p>
+              <label>
+                  <input class="input-radio" name="user-recommend"
+                  value="Com certeza" type="radio" checked="">
+                  Com certeza!
+              </label>
+              <label>
+                  <input class="input-radio" name="user-recommend"
+                  value="talvez" type="radio" >
+                  Talvez, dependendo do Serviço
+              </label>
+              <label>
+                  <input class="input-radio" name="user-recommend"
+                  vale="tamaluco" type="radio" >
+                  Não se o caso for programação ou desenvolvimento em alto nível.
+              </label>
+            </div> 
+            <div class="form-group">
+                <p>
+                    Qual seria a sua principal habilidade?
+                </p>
+                <select id="most-like" class="form-control" name="mostLike"
+                required="">
+                    <option disabled="" selected="" value="">Escolha a melhor habilidade dele.</option>
+                    <option value="shellautomatization">Automatização Shell Script</option>
+                    <option value="linuxadministration">Administraçao Linux</option>
+                    <option value="windowsadministration">Administraçao Windows</option>
+                    <option value="webdeveloper">Desenvolvedor de Websites</option>
+                    <option value="webserviceadmin">Administrador de Serviços Web</option>
+                    <option value="remotesupport">Suporte Remoto</option>
+                </select>
+            </div>
+                
+        </div>
+        <div class="form-group">
+            <p>O que você acha que ele deveria aprimorar?</p>
+            <br>
+            <div class="form-group-t">
+            <div class="form-group1">
+            <label>
+                <input class="input-checkbox" name="prefer" value="front-end-projects" type="checkbox">
+                Projeto de Front-End
+            </label>
+            <label>
+                <input class="input-checkbox" name="prefer" value="back-end-projects" type="checkbox">
+                Projeto de Back-End
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="html" type="checkbox">
+               HTML
+              </label> 
+              <label>
+                <input class="input-checkbox" name="prefer" value="css" type="checkbox">
+                CSS
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="javascript" type="checkbox">
+                JavaScript
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="python" type="checkbox">
+                Python
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="php" type="checkbox">
+                PHP
+              </label>
+        </div>
+        <div class="form-group2">
+            <label>
+                <input class="input-checkbox" name="prefer" value="linuxos" type="checkbox">
+                Sistemas Operacionais Linux
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="winos" type="checkbox">
+                Sistemas Operacionais Windows
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="shell" type="checkbox">
+                Shell Bash
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="powershell" type="checkbox">
+                PowerShell
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="emailservices" type="checkbox">
+                Serviços de Email
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="netservices" type="checkbox">
+                Serviços de Redes
+              </label>
+              <label>
+                <input class="input-checkbox" name="prefer" value="devices" type="checkbox">
+                Dispositivos de Redes
+              </label>
+            </div>  
+        </div>
+        </div>
+        <div class="form-group">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Adicione seu comentário aqui"></textarea>
+        </div>
+        <div class="form-group">
+            <button id="submit" class="submit-button" type="submit">Enviar
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

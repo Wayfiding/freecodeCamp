@@ -1,0 +1,58 @@
+html {
+    font-size: 10px;
+    background: whitesmoke
+    border-radius: 10px
+}
+
+header {
+    background: lightskyblue;
+    padding: 25px;
+    margin-bottom: 0;
+    align-self: center;
+    border-radius: 10px;
+    font-size: 4rem;
+}
+
+body {
+    text-align: center;
+}
+
+main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 10px;
+    background: lightblue;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 30;
+    padding-top: -300;
+    border-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+#image {
+    max-width:100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15%;
+}
+#img-caption {
+    margin: 10px 0 5px 0;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto  50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
